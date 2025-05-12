@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Sobre mim</title>
+        <style>
+            h1{color: rgba(221, 4, 4, 0.993); 
+              font-size: 25px;
+              text-align: center;}
+
+             body {background-color:  rgb(221,235, 224);}
+
+             p{ font-size: 30px;
+             text-align: justify;
+             line-height: 1.3;
+             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+             #botao {display: block;
+                     margin: 0 auto;
+                     text-align: center;
+                     padding: 10px ;
+                     font-size: 15px;
+                     color: blueviolet;}
+
+          #mensagem {text-align: center;
+                       font-size: 35px;}
+    
+        
+              ul {
+            
+                list-style-type: disc;
+                list-style-position:outside; 
+                padding-left: 40px;
+                margin:0 auto;
+                width: fit-content;}
+
+                li {
+                    text-align:left;
+                    padding: 5px;
+                    display: list-item;}
+                    
+               .cartaz-psicose{border: 5px;
+                border-radius: 20px;
+                display:block;
+                margin-left: auto;
+                margin-right: auto;}
+
+            #Paísesquequeroconhecer {
+            text-align: center;
+            color:black;}
+
+        table{ width: 150px;
+        border-collapse: collapse;
+        margin: 20px auto;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+        th, td{ border: 2px solid; color: black;
+        padding: 12px;
+        text-align: center;}
+
+       a:hover {
+        color:black
+       }
+        
+        </style>
+        </head>
+        <body>
+
+        <h1> Mayara Nunes </h1> 
+        
+     <p> Meu nome é Mayara Nunes, tenho 29 anos, moro na Zona Sul da capital Paulista. Amo poesia, MPB, livros, café, filmes de terror, vinho. Essas coisas tornam os meus dias mais agradáveis. Tenho uma coleção de bonecos da franquia "My Scene" da Mattel dos anos 2000, algo que marcou profundamente a minha infância e significa muito para mim. Acredito que essa coleção representa um capítulo muito especial da minha vida. </p>
+       
+     <button id="botao">Clique aqui para ver uma mensagem.</button>
+     <p id="mensagem"></p>
+
+     <script>
+
+        document.getElementById("botao").addEventListener("click", function() {
+            document.getElementById("mensagem").innerText= "Longa é a arte, tão breve a vida.";  
+        }); 
+
+       </script>
+       <ul> 
+         <li style="margin-bottom: 10px;">Música</li>
+         <li style="margin-bottom: 10px;">Livros</li>
+         <li style="margin-bottom: 10px;">Filmes de terror</li>
+        
+         </ul>
+        <br>
+                 
+        <img class="cartaz-psicose" src="psicosecartaz.jpg" alt="Psicose, 1960" width="280px">
+        <br> 
+
+        <p id="Paísesquequeroconhecer">Países que quero conhecer: </p>
+            <table>
+            <tr> 
+                 <th> Países </th> 
+                <th>Bandeiras</th>
+                </tr>
+                <tr> 
+                    <td> Austrália</td> 
+
+                    <td><img class="bandeiraAustrália" src="Australia.jpg" alt="bandeira da Austrália" width="400"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td> Estados Unidos</td>
+                        <td><img class="bandeiraEua" src="EstadosUnidos.jpg" alt="bandeira dos EstadosUnidos" width="400"></td>
+                    </tr>
+                        <tr>
+                        <td> França</td>
+                        <td><img class="bandeiraFrança" src="França.jpg" alt="bandeira da França" width="400"></td>
+                    </tr> 
+                    </table>
+                
+                    <p style="text-align: right;"> 
+                   <a href="https://www.youtube.com/c/JaquelineGuerreiroOficial" target="_blank"> acessar página</a>
+                </p>
+
+        </body>
+        </html>
